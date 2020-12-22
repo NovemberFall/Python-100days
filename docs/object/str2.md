@@ -32,5 +32,4 @@
     
     x.split('i') # ['H', ' th', 's ', 's a str', 'ng']
 
-
 ```
