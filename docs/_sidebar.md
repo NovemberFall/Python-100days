@@ -6,7 +6,10 @@
     * [List in Python](object/List.md)
     * [Dictionaries](object/dict.md)
     * [Tuples](object/tuple.md)
+    * [Set](object/set.md)
     * [I/O with Files in Python](object/io.md)
+    * [Python Statements](object/intro.md)
+        * [If Elif and Else Statements](object/if.md) 
   
 -----
 * [Machine Learning](mlearning/intro.md)
