@@ -10,6 +10,7 @@
     * [I/O with Files in Python](object/io.md)
     * [Python Statements](object/intro.md)
         * [If Elif and Else Statements](object/if.md) 
+        * [for loop](object/for.md) 
   
 -----
 * [Machine Learning](mlearning/intro.md)
