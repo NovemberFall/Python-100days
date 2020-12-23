@@ -4,4 +4,4 @@
 
 ### Python Statement
 
-- [If Elif and Else Statements in Python](object/../if.md)
+- [If Elif and Else Statements in Python](./if.md)
