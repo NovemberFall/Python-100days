@@ -11,6 +11,7 @@
     * [Python Statements](object/intro.md)
         * [If Elif and Else Statements](object/if.md) 
         * [for loop](object/for.md) 
+        * [while loop](object/while.md) 
   
 -----
 * [Machine Learning](mlearning/intro.md)
