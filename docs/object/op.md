@@ -199,4 +199,27 @@ mynum
 
 input('Enter a number here: ')
 '50'
+
+
+
+
+
+reuslt = input('What is your name? ')
+result
+'Jose'
+
+
+
+num = input('Favorite Number: ')
+num
+'30'
+
+type(num)
+str
+
+float(num)
+30.0
+
+int(num)
+30
 ```
