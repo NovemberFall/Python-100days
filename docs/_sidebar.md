@@ -13,7 +13,7 @@
         * [for loop](object/for.md) 
         * [while loop](object/while.md) 
         * [useful Operators in Python](object/op.md) 
-  
+    * [Method and Function](object/fun.md)
 -----
 * [Machine Learning](mlearning/intro.md)
 
