@@ -1,5 +1,7 @@
 ## Lists
 
+![](img/2021-02-15-22-36-35.png)
+
 ```py
 print (dir ([]) )
 ['__add__', '__class__', '__contains__', '__delattr__', '__delitem__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__',
@@ -114,5 +116,53 @@ print( x.__getitem__(0) )
 # first
 
 
+x = ["first", "second", "third", "fourth"]
+x[-2]                                      # 'third'
+```
+
+![](img/2021-02-15-22-21-21.png)
+
+---
+
+### Slicing n. 切断，切片；限制
+
+- **slicing** Instead of entering `list[index]` to extract the item just after index, enter `list[index1:index2]` 
+  to extract all items including `index1` and up to (but not including) `index2` into a new list.
+
+```py
+x = ["first", "second", "third", "fourth"]    
+x[1:-1]                         # ['second', 'third']
+x[0:3]                          # ['first', 'second', 'third']
+x[-2:-1]                        # ['third']
+```
+
+
+- It may seem reasonable that if the second index indicates a position in the list before the first index, 
+  this code would return the elements between those indices in reverse order, 
+  but this isn’t what happens. Instead, this code returns an empty list:
+
+```py
+x = ["first", "second", "third", "fourth"]    
+x[-1:2]                         # []
+```
+
+
+- When **slicing** a list, it’s also possible to leave out `index1` or `index2`. 
+  - Leaving out index1 means “Go from the beginning of the list,” and 
+  - leaving out index2 means “Go to the end of the list”:
+
+```py
+x = ["first", "second", "third", "fourth"]    
+
+x[:3]                           # ['first', 'second', 'third']
+x[2:]                           # ['third', 'fourth']
+```
+
+
+- Omitting both indices makes a new list that goes from the beginning to the end of the original list—that is, 
+  copies the list. This technique is useful when you want to make a copy that you can modify 
+  without affecting the original list:
+
+```py
 
 ```
