@@ -164,5 +164,54 @@ x[2:]                           # ['third', 'fourth']
   without affecting the original list:
 
 ```py
+x = ["first", "second", "third", "fourth"]
 
+y = x[:]
+y[0] = '1 st'
+y                              # ['1 st', 'second', 'third', 'fourth']
+x                              # ['first', 'second', 'third', 'fourth']
+```
+
+---
+
+### `reversed()` method returns an iterator that accesses the given sequence in the reverse order.
+
+```py
+x = [1, 2, 3]
+y = reversed(x)
+for i in y:
+    print(i)
+
+# 3
+# 2
+# 1
+
+
+
+
+x = [1, 2, 3]
+y = reversed(x)
+for i in x:
+    print(i)
+# 1
+# 2
+# 3
+
+
+
+
+x = [1, 2, 3]
+y = reversed(x)
+for i in reversed(x):
+    print(i)
+# 3
+# 2
+# 1
+```
+
+-----
+
+## 05.3 Modifying Lists
+
+```py
 ```
