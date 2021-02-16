@@ -24,14 +24,14 @@ b = a[:]
 # This technique is useful when you want to make a copy that you can modify without affecting the original list:
 b
 
-[1, 2, 3]
+# [1, 2, 3]
 
 
 
 
 b = a[0:len(a)]
 b
-[1, 2, 3]
+# [1, 2, 3]
 
 
 
@@ -40,8 +40,8 @@ b = copy.copy(b)
 print( b.__str__() )
 print(str(b))
 
-[1, 2, 3]
-[1, 2, 3]
+# [1, 2, 3]
+# [1, 2, 3]
 
 
 
@@ -52,7 +52,7 @@ x *= 3                 # x = x*3
 y.__imul__(3)          # overload *= 
 y
 
-[1, 2, 3, 1, 2, 3, 1, 2, 3]
+# [1, 2, 3, 1, 2, 3, 1, 2, 3]
 
 
 
@@ -63,14 +63,56 @@ y = x*3               # y = x*3
 z = x.__mul__(3)      # overload *= 
 y, y == z
 
-([1, 2, 3, 1, 2, 3, 1, 2, 3], True)
+# ([1, 2, 3, 1, 2, 3, 1, 2, 3], True)
+```
+
+---
+
+## 05.1 Lists like arrays
 
 
-
-
-# 05.1 Lists like arrays
-# 
+```py
 x = [2, "two", [1, 2, 3]]     # list is hetrogeneous
 len(x)                        # same as x.__len__()
 # 3
+
+
+x.__len__()  # same as len(x)
+# 3
+
+print(len(x))
+# 3
+
+
+
+for i in x:
+    print(i)
+# 2
+# two
+# [1, 2, 3]
+
+
+
+
+[1, 2, 3] in x  
+x.__contains__([1,2,3])
+# True
+```
+
+
+---
+
+
+##  05.2 List indices
+
+```py
+x = ["first", "second", "third", "fourth"]
+a = x[-1]
+a                                          # 'fourth'
+
+print( x.__getitem__(0) )
+# first
+
+
+
 ```
