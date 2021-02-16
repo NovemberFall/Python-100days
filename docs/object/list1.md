@@ -213,5 +213,53 @@ for i in reversed(x):
 
 ## 05.3 Modifying Lists
 
+![](img/2021-02-15-23-05-39.png)
+
 ```py
+#  Lists are mutable
+x = [1, 2, 3, 4];   
+x[1] = "two";   
+x                                    # [1, 'two', 3, 4]
+# 
+# 
+x = [1, 2, 3, 4];    x[len(x):] = [5, 6, 7]  #  x += [5, 6, 7] 
+x                                   # [1, 2, 3, 4, 5, 6, 7]
+
+
+
+
+x[:0]  #  []
+
+x   #  [1, 2, 3, 4, 5, 6, 7]
 ```
+
+
+
+![](img/2021-02-15-23-23-42.png)
+
+
+```py
+x[:0] = [-1, 0]                     #   B
+x                                   # [-1, 0, 1, 2, 3, 4, 5, 6, 7]
+
+x[1:-1] = []                        #C 
+x                                   # [-1, 7]
+
+
+
+x = [1, 2, 3]; 
+x.append("four"); 
+x  # [1, 2, 3, 'four']
+
+
+###############################################
+
+# One problem can occur if you try to append one list to another. The list gets appended 
+# as a single element of the main list:
+
+x = [1, 2, 3, 4];  
+y = [5, 6, 7]; 
+x.append(y); 
+x # [1, 2, 3, 4, [5, 6, 7]]
+```
+
