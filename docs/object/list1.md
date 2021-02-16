@@ -67,4 +67,10 @@ y, y == z
 
 
 
+
+# 05.1 Lists like arrays
+# 
+x = [2, "two", [1, 2, 3]]     # list is hetrogeneous
+len(x)                        # same as x.__len__()
+# 3
 ```
