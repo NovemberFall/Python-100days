@@ -4,6 +4,7 @@
         * [Immutability](object/str2.md) 
         * [Print Formatting with Strings](object/str3.md) 
     * [List in Python](object/List.md)
+        * [Lists](object/list1.md) 
     * [Dictionaries](object/dict.md)
     * [Tuples](object/tuple.md)
     * [Set](object/set.md)
@@ -14,6 +15,7 @@
         * [while loop](object/while.md) 
         * [useful Operators in Python](object/op.md) 
     * [Method and Function](object/fun.md)
+
 -----
 * [Machine Learning](mlearning/intro.md)
 
