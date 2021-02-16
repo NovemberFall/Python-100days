@@ -263,3 +263,130 @@ x.append(y);
 x # [1, 2, 3, 4, [5, 6, 7]]
 ```
 
+---
+
+### `extend` method
+
+- The **extend** method is like the append method except that it allows you to add one
+  list to another:
+
+```py
+x = [1, 2, 3, 4]
+y = [5, 6, 7]
+x.extend(y) 
+print (x)                       # A: [1, 2, 3, 4, 5, 6, 7]
+
+
+
+
+x = [1, 2, 3, 4]
+y = [5, 6, 7]
+x.append ( y)
+print (x)                        # B: [1, 2, 3, 4, [5, 6, 7]]
+
+
+
+
+
+x = [1, 2, 3, 4]
+y = [5, 6, 7]
+x += y
+print (x)                        # C: [1, 2, 3, 4, 5, 6, 7]
+
+
+
+
+
+x = [1, 2, 3, 4]
+y = [5, 6, 7]
+x += [y]
+print (x)                        # D: [1, 2, 3, 4, [5, 6, 7]]
+```
+
+---
+
+- There’s also a special **insert** method to insert new list elements between two existing elements or 
+  at the front of the list. insert is used as a method of lists and takes two additional arguments. 
+  The first additional argument is the index position in the list where the new element should be inserted, 
+  and the second is the new element itself:
+
+```py
+x = [1, 2, 3, 4]
+y = [5, 6, 7] 
+x.insert (-1,y)                  # inserted before 
+print (x)                        # [1, 2, 3, [5, 6, 7], 4]
+
+
+x.remove (y)
+print (x)                        # [1, 2, 3, 4]
+
+del x[-1]
+print (x)                        # [1, 2, 3]
+
+
+
+x = [1,2,3,2,4,2]
+x.remove(2)     # only delete first one '2'
+x
+
+
+
+
+x = [1,2,3,4]
+del x[1]
+x
+# 1 3 4
+
+
+
+
+
+x = [1, 2, 3]
+x.insert(2, "hello")
+print(x)                 # [1, 2, 'hello', 3]
+x.insert(0, "start")
+print(x)                 # ['start', 1, 2, 'hello', 3]
+
+
+x = [1, 2, 3]
+x.insert(-1, "hello")
+print(x)                 # [1, 2, 'hello', 3]
+
+
+
+
+x = ['a', 2, 'c', 7, 9, 11]
+del x[1]
+x
+# ['a', 'c', 7, 9, 11]
+del x[:2]                      # delete the first two items
+x                              # [7, 9, 11]
+
+
+
+
+
+x = [1, 2, 3, 4, 3, 5]
+x.remove(3)                    # remove the first item '3'
+x                              # [1, 2, 4, 3, 5]
+# qqq
+x.remove(3)
+x
+# [1, 2, 4, 5]
+
+
+```
+
+---
+
+- The reverse method is a more specialized list modification method. 
+  It efficiently reverses a list in place:
+
+
+```py
+x = [1, 3, 5, 6, 7]
+x.reverse()
+x                             # [7, 6, 5, 3, 1]
+```
+
+
