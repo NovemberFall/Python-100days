@@ -28,5 +28,22 @@ b
 
 
 
+import copy
+b = copy.copy(b)
+print( b.__str__() )
+print(str(b))
 
+[1, 2, 3]
+[1, 2, 3]
+
+
+
+
+x = [1,2,3]
+y = x.copy()           # a shallow copy of the list, same as y = x[:]
+x *= 3                 # x = x*3
+y.__imul__(3)          # overload *= 
+y
+
+[1, 2, 3, 1, 2, 3, 1, 2, 3]
 ```
