@@ -19,8 +19,8 @@ copy() method of builtins.list instance
 
 a = [1,2,3]
 b = a[:]  
-# Omitting both indices makes a new list that goes from the beginning to the end of the original list—that is,
-# copies the list. 
+# Omitting both indices makes a new list that goes from the beginning to the end of 
+# the original list—that is, copies the list. 
 # This technique is useful when you want to make a copy that you can modify without affecting the original list:
 b
 
