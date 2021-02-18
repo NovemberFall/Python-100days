@@ -3,6 +3,7 @@
         * [Indexing and Slicing with Strings](object/str1.md) 
         * [Immutability](object/str2.md) 
         * [Print Formatting with Strings](object/str3.md) 
+        * [Strings](object/str4.md) 
     * [List in Python](object/List.md)
         * [Lists](object/list1.md) 
         * [List | custom sorting](object/list2.md) 

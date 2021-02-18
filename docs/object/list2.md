@@ -166,11 +166,31 @@ original                        # [[0], 1]
 
 ![](img/2021-02-17-19-19-57.png)
 
----
+-----
 
 
+![](img/2021-02-17-20-10-57.png)
 
+```py
+import copy
+original = [[0], 1]
+shallow = original[:]    
+# same as original.copy(), copy.copy(original) 
+deep = copy.deepcopy(original)
 
+shallow[1] = 2
+shallow                         # [[0], 2]
+original                        # [[0], 1]
+
+shallow[0][0] = 'zero'
+original                        # [['zero'], 1]
+
+deep[0][0] = 5
+deep                             # [[5], 1]
+original                         # [['zero'], 1]
+```
+
+- **you can find that deepcopy can not affect original**
 
 
 
