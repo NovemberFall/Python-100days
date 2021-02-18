@@ -8,6 +8,7 @@
         * [Lists](object/list1.md) 
         * [List | custom sorting](object/list2.md) 
     * [Dictionaries](object/dict.md)
+        * [Dictionaries are like hash tables](object/dict1.md)
     * [Tuples](object/tuple.md)
         * [Tuple](object/tuple1.md) 
     * [Set](object/set.md)
