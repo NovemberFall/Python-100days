@@ -209,8 +209,24 @@ zip( [1, 1, 1], [2, 2, 2], [3, 3, 3]  )
 
 
 x = zip( [1, 1, 1], [2, 2, 2], [3, 3, 3]  )
+# x = zip(*A)     # same above
 print(x)
 # <zip object at 0x7fb6355313c0>
+# Note: zip(*A), return a zip object
+
+
+
+
+
+
+
+
+x = zip( [1, 1, 1], [2, 2, 2], [3, 3, 3]  )
+# x = zip(*A)
+for y in x: print(y)
+# (1, 2, 3)
+# (1, 2, 3)
+# (1, 2, 3)
 
 
 
