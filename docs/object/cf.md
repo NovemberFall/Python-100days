@@ -276,3 +276,55 @@ n = 10
 # Y= [[1, 1], [1, 0]]
 # [0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55]
 ```
+
+-----
+
+## 
+
+```py
+# Try this: Looping and if statements
+
+# Suppose that you have a list x = [1, 3, 5, 0, -1, 3, -2], 
+# and you need to remove all negative numbers from that list. 
+# Write the code to do this.
+
+# How would you count the total number of negative numbers in 
+# a list y = [[1, -1, 0], [2, 5, -9], [-2, -3, 0]]?
+
+
+
+count = 0
+y = [[1, -1, 0], [2, 5, -9], [-2, -3, 0]]
+for row in y:    
+    for col in row:        
+        if col < 0:            
+            count += 1
+print(count)
+
+
+
+
+
+
+
+
+# OR:
+
+y = [[1, -1, 0], [2, 5, -9], [-2, -3, 0]]
+sum ( [ len( [ x for x in rows if x < 0]) for rows in y] )
+
+
+
+a = [len([ x for x in rows if x < 0]) for rows in y ]
+a = [ [x for x in rows if x < 0] for rows in y ]
+print(a)
+a = [ len(i) for i in a]
+a
+sum(a)
+
+# [[-1], [-9], [-2, -3]]
+# [1, 1, 2]
+# 4
+
+
+```
