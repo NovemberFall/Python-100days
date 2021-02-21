@@ -18,6 +18,7 @@
         * [for loop](object/for.md) 
         * [while loop](object/while.md) 
         * [useful Operators in Python](object/op.md) 
+        * [Control flow](object/cf.md) 
     * [Method and Function](object/fun.md)
 
 -----
