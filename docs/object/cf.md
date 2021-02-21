@@ -251,7 +251,7 @@ def dot (A, B):
     return sum(z)
 
 def mul(X, Y):
-    Y = [ list(y) for y in zip(*Y) ] # transpose matrix Y
+    Y = [ list(y) for y in zip(*Y) ] # transpose of matrix Y
     print("Y=", Y)
     Z = [ [ dot(x,y) for y in Y ] for x in X]
     for i in range( len(Z) ):
