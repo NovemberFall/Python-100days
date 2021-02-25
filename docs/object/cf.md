@@ -165,6 +165,13 @@ x
 
 
 
+p = [ [1,0], [1,1] ]
+x = [ list(x) for x in zip(*p)]
+x
+# [[1, 1], [0, 1]]
+
+
+
 
 
 A = [ [1,2], \
@@ -327,4 +334,52 @@ sum(a)
 # 4
 
 
+```
+
+---
+
+## enumerate function
+
+```py
+help ( enumerate )
+```
+
+![](img/2021-02-24-18-15-45.png)
+
+```py
+l1 = ["eat","sleep","repeat"]
+ 
+# printing the tuples in object directly
+for ele in enumerate(l1):
+    print (ele)
+print
+# changing index and printing separately
+for count,ele in enumerate(l1,100):
+    print (count,ele)
+
+# (0, 'eat')
+# (1, 'sleep')
+# (2, 'repeat')
+
+# 100 eat
+# 101 sleep
+# 102 repeat
+
+
+
+
+
+
+
+
+
+
+
+x = [1, 3, -7, 4, 9, -5, 4]
+for i, n in enumerate(x):                               
+    if n < 0:                                           
+        print("Found a negative number at index ", i)   
+
+# Found a negative number at index  2
+# Found a negative number at index  5
 ```
