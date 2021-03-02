@@ -20,6 +20,7 @@
         * [useful Operators in Python](object/op.md) 
         * [Control flow](object/cf.md) 
     * [Method and Function](object/fun.md)
+        * [Function](object/fun1.md)
 
 -----
 * [Machine Learning](mlearning/intro.md)
