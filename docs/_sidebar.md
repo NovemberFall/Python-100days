@@ -20,7 +20,8 @@
         * [useful Operators in Python](object/op.md) 
         * [Control flow](object/cf.md) 
     * [Method and Function](object/fun.md)
-        * [Function](object/fun1.md)
+        * [Function I](object/fun1.md)
+        * [Function II](object/fun2.md)
 
 -----
 * [Machine Learning](mlearning/intro.md)

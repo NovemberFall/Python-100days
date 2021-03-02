@@ -292,7 +292,17 @@ print( id(x) )
 
 
 
+x = []             # x is  mutable
+print ( id(x))
 
+x += [1]
+print ( id(x))
+
+x = x + [1]  # x + [1], since + is create a new object
+print ( id(x))
+# 140483677524736
+# 140483677524736
+# 140483677697728
 ```
 
 
