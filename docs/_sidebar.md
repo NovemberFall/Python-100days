@@ -22,6 +22,8 @@
     * [Method and Function](object/fun.md)
         * [Function I](object/fun1.md)
         * [Function II](object/fun2.md)
+        * [Function III](object/fun3.md)
+        * [Function IV](object/fun4.md)
 
 -----
 * [Machine Learning](mlearning/intro.md)
