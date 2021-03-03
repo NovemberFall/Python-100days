@@ -89,9 +89,7 @@ t2['CtoK'](100)
 
 
 
-
-
-
+# key is a sorting key
 x=[ 1,-2,3,-4,5,-6 ]
 x.sort(key=abs )
 print (x)
@@ -132,4 +130,85 @@ y=[ 1,-2,3,-4,5,-6 ]
 y.sort(key=lambda y: y if y >= 0 else -y)
 print(y)
 # [1, -2, 3, -4, 5, -6]
+```
+
+-----
+
+## Generator Expressions
+
+```py
+## 08.4 List and dictionary **comprehensions
+
+x = [1, 2, 3, 4]
+x_squared = []
+for item in x:
+     x_squared.append(item * item)
+ 
+x_squared
+# [1, 4, 9, 16]
+# 
+# 
+x = [1, 2, 3, 4]
+x_squared = [item * item for item in x]
+x_squared                # [1, 4, 9, 16]
+# 
+# 
+x = [1, 2, 3, 4]
+x_squared = [item * item for item in x if item > 2]
+# 
+x_squared                # [9, 16]
+# 
+# 
+x = [1, 2, 3, 4]
+x_squared_dict = {item: item * item for item in x}
+x_squared_dict
+# {1: 1, 2: 4, 3: 9, 4: 16}
+# 
+```
+
+---
+
+- Generator expressions are similar to list comprehensions.
+- A generator expression looks a lot like a list comprehension,
+  - except that in place of square brackets [], it uses 
+    parentheses.
+- The following example is the generator-expression version of 
+  the list comprehension already discussed:
+
+
+
+```py
+## 08.4.1 Generator Expressions
+
+x = [1, 2, 3, 4]
+x_squared = [item * item for item in x] # list comprehesnion
+x_squared
+# [1, 4, 9, 16]
+
+
+
+
+x = [1, 2, 3, 4]
+x_squared = (i * i for i in x) 
+# generator expression uses parentheses.
+x_squared     # <generator object <genexpr> at 0x102176708>
+
+for i in x_squared:
+    print(i)
+
+# 1
+# 4
+# 9
+# 16
+
+
+
+
+n = 100
+x_squared = (i * i for i in range(n)) 
+# generator expression uses parentheses.
+x_squared     # <generator object <genexpr> at 0x102176708>
+
+4 in x_squared, 9 in x_squared,  3 in x_squared
+# (True, True, False)
 ```
