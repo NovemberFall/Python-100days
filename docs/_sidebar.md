@@ -24,6 +24,7 @@
         * [Function II](object/fun2.md)
         * [Function III](object/fun3.md)
         * [Function IV](object/fun4.md)
+    * [Classes and object-oriented programming](class/cls.md)
 
 -----
 * [Machine Learning](mlearning/intro.md)
