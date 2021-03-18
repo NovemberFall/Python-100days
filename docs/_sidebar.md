@@ -13,6 +13,7 @@
         * [Tuple](object/tuple1.md) 
     * [Set](object/set.md)
     * [I/O with Files in Python](object/io.md)
+        * [Reading and writing files](object/io1.md) 
     * [Python Statements](object/intro.md)
         * [If Elif and Else Statements](object/if.md) 
         * [for loop](object/for.md) 
@@ -25,6 +26,7 @@
         * [Function III](object/fun3.md)
         * [Function IV](object/fun4.md)
     * [Classes and object-oriented programming](class/cls.md)
+        * [class I](class/cls1.md)]
 
 -----
 * [Machine Learning](mlearning/intro.md)
