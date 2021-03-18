@@ -26,7 +26,8 @@
         * [Function III](object/fun3.md)
         * [Function IV](object/fun4.md)
     * [Classes and object-oriented programming](class/cls.md)
-        * [class I](class/cls1.md)]
+        * [class I](class/cls1.md)
+    * [Exceptions](class/exce.md)         
 
 -----
 * [Machine Learning](mlearning/intro.md)
