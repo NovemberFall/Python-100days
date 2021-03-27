@@ -32,4 +32,6 @@
 -----
 * [Machine Learning](mlearning/intro.md)
     * [NumPy](mlearning/numpy.md)
+    * [Pandas](mlearning/panda.md)
+        * [Pandas I](mlearning/panda1.md)
 
