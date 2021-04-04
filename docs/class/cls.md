@@ -155,7 +155,26 @@ class Circle:
 c = Circle(3)
 Circle.diameter(c)      # class method
 # 18.849539999999998
+
+
+
+
+
+
+
+Circle                # <class '__main__.Circle'>
+c.__class__           # <class '__main__.Circle'>
+c.__class__.pi        # 3.14159
+c.pi     
+# Why does it work since there is no instance varialbe pi?
+
+c.pi = 3.14
+id (Circle) ==id ( c.__class__ )
+# True
 ```
+
+![](img/2021-03-23-11-34-55.png)
+![](img/2021-03-23-11-35-24.png)
 
 
 ---
@@ -166,6 +185,16 @@ Circle.diameter(c)      # class method
   explicitly to static methods in a language such as Java. 
   In addition, Python has class methods, which are a bit more 
   advanced.
+
+
+- @staticmethod function
+  - is nothing more than a function defined inside a class.
+  - It is callable without instantiating the class first.
+  - It's definition is immutable via inheritance.
+- @classmethod function
+  - is also callable without instantiating the class,
+  - but its definition follows Sub class, not Parent class, 
+    via inheritance
 
 
 ```py
