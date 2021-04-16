@@ -9,6 +9,7 @@
         * [List | custom sorting](object/list2.md) 
     * [Dictionaries](object/dict.md)
         * [Dictionaries are like hash tables](object/dict1.md)
+        * [Map](object/dict2.md)
     * [Tuples](object/tuple.md)
         * [Tuple](object/tuple1.md) 
     * [Set](object/set.md)
@@ -28,7 +29,8 @@
     * [Classes and object-oriented programming](class/cls.md)
         * [class I](class/cls1.md)
     * [Exceptions](class/exce.md)         
-
+    * [Data over the network](network/ftp.md)         
+        * [Retrieving files over HTTP/HTTPS](network/ftp1.md)
 -----
 * [Machine Learning](mlearning/intro.md)
     * [NumPy](mlearning/numpy.md)
